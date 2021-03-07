@@ -1,7 +1,7 @@
 syntax = "proto3";
 
 // Service that will be the main api for the league runner service. 
-import "google/protobuf/empty.proto";
+// import "google/protobuf/empty.proto";
 import "proto_api/shared/games.proto";
 
 service LeagueRunner {
@@ -19,7 +19,7 @@ service LeagueRunner {
 
     // Used to report the results of playing all the games in a GameReponse 
     // (along with any updated network for main agents).
-    rpc ReportResults (ReportRequest) returns (google.protobuf.Empty) {}
+    rpc ReportResults (ReportRequest) returns (NothingResponse) {}
 }
 
 message AgentRequest {
@@ -50,4 +50,8 @@ message GameResponse {
 message ReportRequest {
     // Results of games.
     repeated GameResult results = 1;
+}
+
+message NothingResponse {
+    int32 nothing = 1;
 }

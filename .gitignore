@@ -8,6 +8,7 @@ __pycache__
 lib
 bin
 include
+pyvenv.cfg
 
 # Miscellaneous
 .Python
