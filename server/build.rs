@@ -26,8 +26,7 @@ fn main() {
 
     let out_dir_path = Path::new(out_dir);
     if !out_dir_path.exists() {
-        create_dir(&out_dir_path)
-            .expect("Failure in creating proto output directory.");
+        create_dir(&out_dir_path).expect("Failure in creating proto output directory.");
     }
 
     // Generate proto library

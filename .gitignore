@@ -6,9 +6,11 @@ __pycache__
 
 # Virtualenv
 lib
+lib64
 bin
 include
 pyvenv.cfg
+Scripts
 
 # Miscellaneous
 .Python

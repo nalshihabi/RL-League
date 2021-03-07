@@ -13,10 +13,10 @@ grpc-protobuf = "=0.8.1"
 protobuf = "=2.14.0"
 tls-api = "0.4.*"
 tls-api-native-tls = "0.4.*"
-uuid = "0.8.2"
+uuid = { version = "0.8.2", features = ["v4"] }
 
 [build-dependencies]
 protobuf-codegen-pure = "2.3"
-protoc-rust-grpc = "~0.8"
+protoc-rust-grpc = "=0.8.0"
 protoc-rust = "=2.14.0"
 walkdir = "~2"
